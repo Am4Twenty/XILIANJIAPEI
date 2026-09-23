@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西联驾培 · 航空港校区 | 19家直营品牌 随到随学车接车送</title>
+<meta name="description" content="西联驾培旗下长城、长征、聚元、五六、博成、广飞、金盾等19家直营品牌驾校，成渝主营、覆盖西南。50+直营场地、100余家直营门店、500余台直营车辆，机器人教练辅助教学，自有考场，随到随学。">
+<link rel="icon" type="image/png" href="207fee025159a563884cc8fe3904163a.png">
+<style>
+/* ============ 基础变量 ============ */
+:root{
+  --blue-900:#08265f;
+  --blue-800:#0b347e;
+  --blue-700:#0e47a8;
+  --blue-600:#1259cf;
+  --blue-500:#1f6ff0;
+  --blue-100:#e4efff;
+  --blue-50:#f2f7ff;
+  --orange:#ff7a18;
+  --orange-dark:#e8630a;
+  --orange-soft:#fff1e6;
+  --ink:#16263f;
+  --gray:#5d6f8c;
+  --line:#e5edf8;
+  --bg:#f5f9ff;
+  --white:#fff;
+  --shadow:0 10px 30px rgba(14,71,168,.10);
+  --shadow-hover:0 18px 44px rgba(14,71,168,.18);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.container{width:min(1180px,92%);margin:0 auto}
+section{padding:88px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 52px}
+.kicker{
+  display:inline-block;font-size:14px;font-weight:700;letter-spacing:2px;
+  color:var(--orange);background:var(--orange-soft);
+  padding:5px 16px;border-radius:999px;margin-bottom:16px;
+}
+.section-head h2{font-size:32px;color:var(--blue-900);line-height:1.3;margin-bottom:14px}
+.section-head p{color:var(--gray);font-size:16px}
+
+/* ============ 按钮 ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 30px;border-radius:10px;font-size:16px;font-weight:600;
+  cursor:pointer;border:2px solid transparent;transition:.25s;white-space:nowrap;
+}
+.btn-primary{background:var(--orange);color:#fff;border-color:var(--orange)}
+.btn-primary:hover{background:var(--orange-dark);border-color:var(--orange-dark);transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:#fff;color:var(--blue-700)}
+.btn-blue{background:var(--blue-600);color:#fff;border-color:var(--blue-600)}
+.btn-blue:hover{background:var(--blue-700);transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============ 导航 ============ */
+header.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);transition:.3s;
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-mark{
+  width:42px;height:42px;border-radius:11px;flex:none;
+  background:linear-gradient(135deg,var(--blue-600),var(--blue-800));
+  display:flex;align-items:center;justify-content:center;
+}
+.logo-mark svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.logo-text b{display:block;font-size:18px;color:var(--blue-900);letter-spacing:1px}
+.logo-text span{display:block;font-size:11px;color:var(--gray);letter-spacing:1px}
+.logo-img{height:46px;width:auto;display:block}
+.logo-fallback{display:none;align-items:center;gap:10px}
+.foot-logo-plate{background:#fff;border-radius:12px;padding:7px 14px;display:inline-flex;align-items:center}
+.foot-logo-img{height:42px;width:auto;display:block}
+.brand-logo-card{
+  background:#fff;border:1px solid var(--line);border-radius:20px;
+  padding:38px 30px;text-align:center;margin-bottom:34px;box-shadow:var(--shadow);
+}
+.brand-logo-card img{height:92px;width:auto;margin:0 auto 16px}
+.brand-logo-card p{color:var(--gray);font-size:14px;letter-spacing:5px}
+.nav-links{display:flex;gap:6px}
+.nav-links a{
+  padding:8px 15px;border-radius:8px;font-size:15px;font-weight:500;color:var(--ink);transition:.2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--blue-600);background:var(--blue-50)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-tel-note{font-size:13px;color:var(--gray)}
+.hamburger{display:none;width:44px;height:44px;border:none;background:var(--blue-50);border-radius:10px;cursor:pointer}
+.hamburger span{display:block;width:20px;height:2px;background:var(--blue-800);margin:4px auto;border-radius:2px;transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ============ 首屏 ============ */
+.hero{
+  padding:168px 0 110px;position:relative;overflow:hidden;color:#fff;
+  background:linear-gradient(135deg,var(--blue-900) 0%,var(--blue-700) 55%,var(--blue-600) 100%);
+}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.06)}
+.hero::before{width:520px;height:520px;top:-220px;right:-140px}
+.hero::after{width:340px;height:340px;bottom:-180px;left:-100px}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:46px 46px;mask-image:radial-gradient(ellipse at 70% 30%,#000 30%,transparent 75%);
+}
+.hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.28);padding:7px 18px;border-radius:999px;font-size:14px;margin-bottom:26px;
+}
+.hero-badge i{width:8px;height:8px;border-radius:50%;background:var(--orange);display:inline-block}
+.hero h1{font-size:44px;line-height:1.28;letter-spacing:1px;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:#ffc99c}
+.hero p.lead{font-size:17px;color:#d7e6ff;margin-bottom:34px;max-width:560px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px}
+.hero-trust{display:flex;gap:30px;flex-wrap:wrap}
+.hero-trust li{display:flex;align-items:center;gap:9px;font-size:14px;color:#dbe9ff}
+.hero-trust svg{width:19px;height:19px;stroke:var(--orange);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.hero-card{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
+  border-radius:22px;padding:34px 30px;backdrop-filter:blur(6px);
+}
+.hero-card h3{font-size:18px;margin-bottom:22px;display:flex;align-items:center;gap:10px}
+.hero-card h3 svg{width:21px;height:21px;stroke:var(--orange);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hero-card ul li{
+  display:flex;justify-content:space-between;gap:12px;padding:13px 0;
+  border-bottom:1px dashed rgba(255,255,255,.25);font-size:15px;
+}
+.hero-card ul li:last-child{border-bottom:none}
+.hero-card ul li b{color:#ffd9bd;font-weight:600}
+
+/* ============ 数据看板 ============ */
+.stats{background:var(--blue-50);padding:0;transform:translateY(-52px)}
+.stats-grid{
+  background:#fff;border-radius:20px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:repeat(6,1fr);overflow:hidden;
+}
+.stat{
+  text-align:center;padding:36px 14px;position:relative;
+}
+.stat:not(:last-child)::after{content:"";position:absolute;right:0;top:22%;height:56%;width:1px;background:var(--line)}
+.stat .num{font-size:34px;font-weight:800;color:var(--blue-700);line-height:1.2}
+.stat .num small{font-size:18px;font-weight:700}
+.stat .label{font-size:14px;color:var(--gray);margin-top:6px}
+.stat:nth-child(2n) .num{color:var(--orange)}
+
+/* ============ 通用卡片网格 ============ */
+.cards{display:grid;gap:24px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 26px;transition:.28s;
+}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);border-color:#cfe0f8}
+.icon-box{
+  width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  background:var(--blue-50);margin-bottom:18px;
+}
+.icon-box svg{width:27px;height:27px;stroke:var(--blue-600);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.card.orange .icon-box{background:var(--orange-soft)}
+.card.orange .icon-box svg{stroke:var(--orange)}
+.card h3{font-size:18px;color:var(--blue-900);margin-bottom:10px}
+.card p{font-size:14.5px;color:var(--gray)}
+
+/* ============ 品牌实力 ============ */
+.brand{background:var(--bg)}
+.brand-top{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:36px}
+.brand-panel{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px;
+  position:relative;overflow:hidden;
+}
+.brand-panel::before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:var(--blue-600)}
+.brand-panel.orange-edge::before{background:var(--orange)}
+.brand-panel h3{font-size:20px;color:var(--blue-900);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.brand-panel h3 svg{width:23px;height:23px;stroke:var(--blue-600);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.brand-panel.orange-edge h3 svg{stroke:var(--orange)}
+.brand-panel p{color:var(--gray);font-size:15px}
+.brand-chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.chip{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:12px 22px;font-size:15px;font-weight:600;color:var(--blue-800);
+  box-shadow:0 3px 10px rgba(14,71,168,.05);transition:.25s;
+}
+.chip:hover{border-color:var(--orange);color:var(--orange);transform:translateY(-3px)}
+.chip.more{background:linear-gradient(135deg,var(--blue-600),var(--blue-800));color:#fff;border-color:transparent}
+
+/* ============ 训练场地 ============ */
+.grounds-map{
+  background:linear-gradient(135deg,var(--blue-50),#eaf3ff);
+  border:1px solid var(--line);border-radius:20px;padding:40px;margin-bottom:34px;
+}
+.grounds-map h3{text-align:center;color:var(--blue-900);font-size:19px;margin-bottom:28px}
+.city-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.city{
+  background:#fff;border-radius:14px;padding:20px;border:1px solid var(--line);
+  display:flex;align-items:center;gap:14px;transition:.25s;
+}
+.city:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.city-dot{
+  width:42px;height:42px;border-radius:50%;flex:none;
+  background:var(--blue-100);display:flex;align-items:center;justify-content:center;
+}
+.city-dot svg{width:21px;height:21px;stroke:var(--blue-600);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.city b{display:block;font-size:16px;color:var(--blue-900)}
+.city span{font-size:13px;color:var(--gray)}
+.ground-points{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ground-points .card{text-align:center}
+.ground-points .big{font-size:30px;font-weight:800;color:var(--blue-700)}
+.ground-points .big.orange{color:var(--orange)}
+.ground-points p{margin-top:6px}
+
+/* ============ 培训特色 ============ */
+.features .cards{grid-template-columns:repeat(3,1fr)}
+.feature-tag{
+  display:inline-block;margin-top:14px;font-size:12.5px;color:var(--blue-600);
+  background:var(--blue-50);padding:3px 12px;border-radius:999px;font-weight:600;
+}
+.card.orange .feature-tag{color:var(--orange);background:var(--orange-soft)}
+
+/* ============ 培训能力 ============ */
+.ability{background:linear-gradient(135deg,var(--blue-900),var(--blue-700));color:#fff}
+.ability .section-head h2{color:#fff}
+.ability .section-head p{color:#c9ddff}
+.ability .kicker{background:rgba(255,122,24,.18);color:#ffb37a}
+.ability-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.ability-item{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  border-radius:var(--radius);padding:28px 24px;transition:.25s;
+}
+.ability-item:hover{background:rgba(255,255,255,.14);transform:translateY(-5px)}
+.ability-item .icon-box{background:rgba(255,255,255,.15)}
+.ability-item .icon-box svg{stroke:#ffc99c}
+.ability-item h3{color:#fff;font-size:17px;margin-bottom:8px}
+.ability-item p{color:#c9ddff;font-size:14px}
+.ability-banner{
+  margin-top:28px;background:var(--orange);border-radius:var(--radius);
+  padding:24px 32px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+  font-size:19px;font-weight:700;letter-spacing:1px;text-align:center;
+}
+.ability-banner svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============ 本校专属安排（时间轴） ============ */
+.campus-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.campus-note{
+  background:linear-gradient(160deg,var(--blue-700),var(--blue-900));
+  border-radius:20px;padding:38px 32px;color:#fff;position:sticky;top:100px;
+}
+.campus-note h3{font-size:22px;margin-bottom:16px}
+.campus-note p{color:#d3e3ff;font-size:15px;margin-bottom:22px}
+.campus-note .pickup{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
+  border-radius:14px;padding:20px;display:flex;gap:14px;
+}
+.campus-note .pickup svg{width:30px;height:30px;flex:none;stroke:var(--orange);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.campus-note .pickup b{display:block;font-size:16px;margin-bottom:4px}
+.campus-note .pickup span{font-size:13.5px;color:#d3e3ff}
+.timeline{position:relative;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--blue-500),var(--orange))}
+.tl-item{position:relative;margin-bottom:30px}
+.tl-item:last-child{margin-bottom:0}
+.tl-dot{
+  position:absolute;left:-34px;top:4px;width:24px;height:24px;border-radius:50%;
+  background:#fff;border:3px solid var(--blue-500);display:flex;align-items:center;justify-content:center;
+}
+.tl-item:nth-child(2) .tl-dot{border-color:var(--orange)}
+.tl-dot small{width:8px;height:8px;border-radius:50%;background:var(--blue-500)}
+.tl-item:nth-child(2) .tl-dot small{background:var(--orange)}
+.tl-item .tl-card{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;transition:.25s;
+}
+.tl-item .tl-card:hover{box-shadow:var(--shadow);border-color:#cfe0f8}
+.tl-item h4{font-size:17px;color:var(--blue-900);margin-bottom:8px}
+.tl-item h4 span{font-size:13px;font-weight:600;color:var(--orange);margin-left:10px}
+.tl-item p{font-size:14.5px;color:var(--gray)}
+.tl-item p b{color:var(--blue-700)}
+
+/* ============ 班型价格 ============ */
+.pricing{background:var(--bg)}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:stretch}
+.price-card{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px 26px;
+  display:flex;flex-direction:column;position:relative;transition:.28s;
+}
+.price-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.price-card.rec{
+  border:2px solid var(--orange);box-shadow:0 16px 40px rgba(255,122,24,.18);
+  transform:scale(1.03);z-index:2;
+}
+.price-card.rec:hover{transform:scale(1.03) translateY(-6px)}
+.rec-badge{
+  position:absolute;top:-15px;left:50%;transform:translateX(-50%);
+  background:var(--orange);color:#fff;font-size:13px;font-weight:700;letter-spacing:2px;
+  padding:5px 20px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 6px 16px rgba(255,122,24,.4);
+}
+.price-tag-top{font-size:14px;color:var(--gray);margin-bottom:6px}
+.price-card h3{font-size:20px;color:var(--blue-900);margin-bottom:16px}
+.price{margin-bottom:20px;display:flex;align-items:baseline;gap:4px}
+.price small{font-size:15px;color:var(--orange-dark);font-weight:700}
+.price b{font-size:38px;color:var(--orange);font-weight:800;line-height:1}
+.price-card:not(.rec) .price small,.price-card:not(.rec) .price b{color:var(--blue-700)}
+.price-list{margin-bottom:26px;flex:1}
+.price-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px;padding:8px 0;color:#3a4c69}
+.price-list svg{width:17px;height:17px;flex:none;margin-top:3px;stroke:var(--blue-500);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.price-card.rec .price-list svg{stroke:var(--orange)}
+.price-list li.off{color:#9fb0c8}
+.price-list li.off svg{stroke:#c2cfdf}
+.price-note{font-size:12px;color:#9fb0c8;margin-top:8px}
+.price-card .btn{width:100%}
+.price-card:not(.rec) .btn{background:var(--blue-50);color:var(--blue-700);border-color:var(--blue-100)}
+.price-card:not(.rec) .btn:hover{background:var(--blue-600);color:#fff;border-color:var(--blue-600)}
+
+/* 对比表 */
+.compare{margin-top:56px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px;overflow-x:auto}
+.compare h3{text-align:center;font-size:20px;color:var(--blue-900);margin-bottom:24px}
+.compare table{width:100%;border-collapse:collapse;min-width:640px}
+.compare th,.compare td{padding:15px 14px;text-align:center;font-size:14.5px;border-bottom:1px solid var(--line)}
+.compare thead th{background:var(--blue-50);color:var(--blue-900);font-size:15px}
+.compare thead th:first-child{border-radius:10px 0 0 0}
+.compare thead th.rec-col{background:var(--orange);color:#fff}
+.compare thead th:last-child{border-radius:0 10px 0 0}
+.compare tbody th{text-align:left;color:var(--ink);font-weight:600;background:#fafcff}
+.compare td.rec-col{background:#fff8f2;font-weight:600;color:var(--orange-dark)}
+.compare .yes{color:var(--blue-600);font-weight:700}
+.compare .dash{color:#b6c4d8}
+.compare-foot{font-size:13px;color:var(--gray);margin-top:16px}
+
+/* ============ 报名咨询 ============ */
+.contact-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+.contact-info h3{font-size:24px;color:var(--blue-900);margin-bottom:14px}
+.contact-info > p{color:var(--gray);margin-bottom:28px}
+.contact-list{margin-bottom:30px}
+.contact-list li{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.contact-list .icon-box{margin-bottom:0;flex:none;width:48px;height:48px}
+.contact-list b{display:block;font-size:16px;color:var(--blue-900);margin-bottom:2px}
+.contact-list span{font-size:14px;color:var(--gray)}
+.steps{display:flex;gap:0;counter-reset:step}
+.steps li{flex:1;text-align:center;position:relative;font-size:13.5px;color:var(--gray);padding:0 6px}
+.steps li::before{
+  counter-increment:step;content:counter(step);
+  display:flex;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:50%;margin:0 auto 8px;
+  background:var(--blue-600);color:#fff;font-weight:700;font-size:15px;
+}
+.steps li:not(:last-child)::after{
+  content:"";position:absolute;top:17px;left:calc(50% + 22px);width:calc(100% - 44px);height:2px;background:var(--blue-100);
+}
+.steps li b{display:block;color:var(--ink);font-size:14px}
+.contact-form{
+  background:#fff;border:1px solid var(--line);border-radius:20px;padding:38px 34px;box-shadow:var(--shadow);
+}
+.contact-form h3{font-size:21px;color:var(--blue-900);margin-bottom:6px}
+.contact-form > p{font-size:14px;color:var(--gray);margin-bottom:24px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:14px;font-weight:600;margin-bottom:7px;color:var(--ink)}
+.field label em{color:var(--orange);font-style:normal}
+.field input,.field select,.field textarea{
+  width:100%;padding:12px 15px;border:1.5px solid var(--line);border-radius:10px;
+  font-size:15px;font-family:inherit;color:var(--ink);background:#fbfdff;transition:.2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--blue-500);background:#fff;box-shadow:0 0 0 3px rgba(31,111,240,.12);
+}
+.field textarea{resize:vertical;min-height:88px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form .btn{width:100%;margin-top:6px}
+.form-tip{font-size:12.5px;color:#9fb0c8;margin-top:12px;text-align:center}
+
+/* ============ 底部 ============ */
+footer{background:var(--blue-900);color:#c4d6f4;padding:56px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer .logo-text b{color:#fff}
+footer .logo-text span{color:#9fb9e3}
+.foot-about{margin:18px 0;font-size:14px;max-width:380px}
+.foot-brands{font-size:13px;color:#8fabdb;line-height:2}
+.foot-col h4{color:#fff;font-size:16px;margin-bottom:16px}
+.foot-col a{display:block;font-size:14px;padding:5px 0;color:#b5cbf0;transition:.2s}
+.foot-col a:hover{color:var(--orange)}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:22px;text-align:center;
+  font-size:13px;color:#87a3d2;
+}
+
+/* ============ 移动端悬浮条 ============ */
+.mobile-bar{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:90;
+  background:#fff;border-top:1px solid var(--line);
+  padding:10px 14px;gap:10px;box-shadow:0 -6px 20px rgba(8,38,95,.12);
+}
+.mobile-bar a{flex:1;padding:12px 6px;font-size:15px}
+
+/* ============ 提示弹层 ============ */
+.toast{
+  position:fixed;top:92px;left:50%;transform:translateX(-50%) translateY(-20px);
+  background:var(--blue-900);color:#fff;padding:14px 26px;border-radius:12px;
+  font-size:15px;box-shadow:0 12px 30px rgba(8,38,95,.3);
+  opacity:0;pointer-events:none;transition:.35s;z-index:200;display:flex;align-items:center;gap:10px;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast svg{width:20px;height:20px;stroke:#ffc99c;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* 滚动显现 */
+.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.22,.68,.32,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ 响应式 ============ */
+@media(max-width:1024px){
+  .hero .container{grid-template-columns:1fr;gap:44px}
+  .hero{padding:140px 0 120px}
+  .hero h1{font-size:36px}
+  .stats-grid{grid-template-columns:repeat(3,1fr)}
+  .stat:nth-child(3)::after{display:none}
+  .stat:nth-child(n+4){border-top:1px solid var(--line)}
+  .price-grid{grid-template-columns:repeat(2,1fr);gap:30px 22px}
+  .price-card.rec{transform:none}
+  .price-card.rec:hover{transform:translateY(-6px)}
+  .ability-grid{grid-template-columns:repeat(2,1fr)}
+  .features .cards{grid-template-columns:repeat(2,1fr)}
+  .brand-top{grid-template-columns:1fr}
+  .campus-wrap,.contact-wrap{grid-template-columns:1fr}
+  .campus-note{position:static}
+}
+@media(max-width:768px){
+  section{padding:60px 0}
+  .section-head h2{font-size:26px}
+  .nav-links{
+    position:fixed;top:72px;left:0;right:0;background:#fff;flex-direction:column;
+    padding:14px 5%;gap:2px;border-bottom:1px solid var(--line);
+    box-shadow:0 16px 30px rgba(8,38,95,.1);display:none;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:13px 10px;font-size:16px}
+  .hamburger{display:block}
+  .nav-cta .btn{display:none}
+  .logo-img{height:38px}
+  .foot-logo-img{height:38px}
+  .brand-logo-card{padding:28px 18px}
+  .brand-logo-card img{height:64px}
+  .hero h1{font-size:29px}
+  .hero p.lead{font-size:15.5px}
+  .hero-card{padding:26px 22px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat::after{display:none!important}
+  .stat:not(:nth-child(2n)){border-right:1px solid var(--line)}
+  .stat{border-bottom:1px solid var(--line);padding:28px 10px}
+  .stat .num{font-size:28px}
+  .grid-3,.grid-4,.features .cards,.ground-points,.city-grid{grid-template-columns:1fr}
+  .city-grid{grid-template-columns:1fr 1fr}
+  .grounds-map{padding:26px 18px}
+  .ability-grid{grid-template-columns:1fr}
+  .ability-banner{font-size:16px;padding:20px}
+  .price-grid{grid-template-columns:1fr}
+  .compare{padding:24px 16px}
+  .form-row{grid-template-columns:1fr}
+  .contact-form{padding:28px 22px}
+  .steps{flex-wrap:wrap;gap:14px 0}
+  .steps li{flex:0 0 33.33%}
+  .steps li:not(:last-child)::after{display:none}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .mobile-bar{display:flex}
+  body{padding-bottom:70px}
+}
+@media(max-width:420px){
+  .city-grid{grid-template-columns:1fr}
+  .hero-actions .btn{width:100%}
+  .hero-trust{gap:14px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <img class="logo-img" src="207fee025159a563884cc8fe3904163a.png" alt="西联驾培" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="logo-fallback">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-5h9L18 17M7 12V8h10v4"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg>
+        </span>
+        <span class="logo-text">
+          <b>西联驾培</b>
+          <span>19家直营品牌 · 航空港校区</span>
+        </span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">首页</a>
+      <a href="#brand">品牌实力</a>
+      <a href="#grounds">训练场地</a>
+      <a href="#features">培训特色</a>
+      <a href="#ability">培训能力</a>
+      <a href="#campus">本校安排</a>
+      <a href="#pricing">班型价格</a>
+      <a href="#contact">报名咨询</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#pricing" class="btn btn-blue">查看班型</a>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 首屏 ============ -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div>
+      <span class="hero-badge"><i></i>西联驾培旗下 · 长城、长征、聚元、五六、博成、广飞、金盾等19家直营品牌</span>
+      <h1>西联驾培 · 19家直营品牌驾校<br>就近练车 · <em>随到随学 · 车接车送</em></h1>
+      <p class="lead">主营成渝、覆盖西南多个城市，全国150家关联业务单位。50+直营场地、100余家直营门店，车辆直营、教练直聘，自有考场，助您高效拿证。</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary">
+          <svg viewBox="0 0 24 24"><path d="M4 18V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12"/><path d="M4 14h16M9 9h6"/></svg>
+          查看班型价格
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.9-.9L3 20l1-4.6A8.38 8.38 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/></svg>
+          在线报名咨询
+        </a>
+      </div>
+      <ul class="hero-trust">
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>直营车辆 500余台</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>教练直聘 不满意可更换</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>机器人教练辅助教学</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>自有考场 通过率高</li>
+      </ul>
+    </div>
+    <div class="hero-card">
+      <h3>
+        <svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg>
+        航空港校区 · 报名即享
+      </h3>
+      <ul>
+        <li><span>训练场覆盖</span><b>成都9区10县</b></li>
+        <li><span>科二考场</span><b>7km / 约15分钟</b></li>
+        <li><span>科三训练</span><b>校周边大路</b></li>
+        <li><span>上门服务</span><b>体检·训练·考试接送</b></li>
+        <li><span>学车班型</span><b>1999元起</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 数据看板 ============ -->
+<div class="stats container">
+  <div class="stats-grid">
+    <div class="stat"><div class="num"><span data-count="19">0</span><small> 家</small></div><div class="label">直营品牌驾校</div></div>
+    <div class="stat"><div class="num"><span data-count="150">0</span><small> 家</small></div><div class="label">全国关联业务单位</div></div>
+    <div class="stat"><div class="num"><span data-count="50">0</span><small> +</small></div><div class="label">直营训练场地</div></div>
+    <div class="stat"><div class="num"><span data-count="100">0</span><small> +</small></div><div class="label">直营门店</div></div>
+    <div class="stat"><div class="num"><span data-count="500">0</span><small> +</small></div><div class="label">直营车辆</div></div>
+    <div class="stat"><div class="num"><span data-count="5">0</span><small> 万+</small></div><div class="label">年均培训人次</div></div>
+  </div>
+</div>
+
+<!-- ============ 品牌实力 ============ -->
+<section class="brand" id="brand">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">BRAND STRENGTH</span>
+      <h2>西联驾培 · 旗下19家直营品牌</h2>
+      <p>旗下汇聚长城、长征、聚元、五六、博成、广飞、金盾等19家直营品牌，统一标准、统一管理、统一服务，学车更有保障。</p>
+    </div>
+    <div class="brand-logo-card reveal">
+      <img src="207fee025159a563884cc8fe3904163a.png" alt="西联驾培品牌标志">
+      <p>统一品牌 · 统一标准 · 统一服务</p>
+    </div>
+    <div class="brand-top reveal">
+      <div class="brand-panel">
+        <h3>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          主营成渝 · 布局西南
+        </h3>
+        <p>主营业务扎根成都、重庆双城经济圈，服务网络涵盖西南多个城市，跨区域学车、考试安排更灵活。</p>
+      </div>
+      <div class="brand-panel orange-edge">
+        <h3>
+          <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+          全国150家关联业务单位
+        </h3>
+        <p>与全国150家业务单位建立关联合作，资源协同、标准统一，从报名到拿证全程规范化服务。</p>
+      </div>
+    </div>
+    <div class="brand-chips reveal">
+      <span class="chip">长城驾校</span>
+      <span class="chip">长征驾校</span>
+      <span class="chip">聚元驾校</span>
+      <span class="chip">五六驾校</span>
+      <span class="chip">博成驾校</span>
+      <span class="chip">广飞驾校</span>
+      <span class="chip">金盾驾校</span>
+      <span class="chip more">等19家直营品牌</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 训练场地 ============ -->
+<section id="grounds">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">TRAINING GROUNDS</span>
+      <h2>训练场地 · 遍布成渝 就近练车</h2>
+      <p>训练场遍布成都9区10县及多个地级市，直营场地50+、直营门店100余家，离家近、练车方便。</p>
+    </div>
+    <div class="grounds-map reveal">
+      <h3>成渝 · 西南重点布局城市</h3>
+      <div class="city-grid">
+        <div class="city">
+          <span class="city-dot"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>成都</b><span>训练场覆盖9区10县</span></div>
+        </div>
+        <div class="city">
+          <span class="city-dot"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>宜宾</b><span>地级市直营布局</span></div>
+        </div>
+        <div class="city">
+          <span class="city-dot"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>绵阳</b><span>地级市直营布局</span></div>
+        </div>
+        <div class="city">
+          <span class="city-dot"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>南充</b><span>地级市直营布局</span></div>
+        </div>
+        <div class="city">
+          <span class="city-dot"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>德阳</b><span>地级市直营布局</span></div>
+        </div>
+        <div class="city">
+          <span class="city-dot"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>眉山</b><span>地级市直营布局</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ground-points reveal">
+      <div class="card">
+        <div class="big">50<sup>+</sup></div>
+        <p>直营训练场地，标准化建设</p>
+      </div>
+      <div class="card">
+        <div class="big orange">100<sup>+</sup></div>
+        <p>直营门店，报名咨询就在身边</p>
+      </div>
+      <div class="card">
+        <div class="big">就近</div>
+        <p>按位置安排场地，省时省力练车</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 培训特色 ============ -->
+<section class="features" id="features" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">FEATURES</span>
+      <h2>培训特色 · 直营体系 科技赋能</h2>
+      <p>从车辆、教练到教学系统全部直营直管，模块化、标准化、精细化教学，质量以学员评价说话。</p>
+    </div>
+    <div class="cards grid-3">
+      <div class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-5h9L18 17M7 12V8h10v4"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></div>
+        <h3>车辆直营</h3>
+        <p>500余台教练车统一采购、统一维护、统一调度，车况稳定，训练与考试车型一致。</p>
+        <span class="feature-tag">直营直管</span>
+      </div>
+      <div class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+        <h3>教练直聘</h3>
+        <p>教练均为企业直聘、统一培训上岗，服务规范可追溯；学员不满意，随时申请更换教练。</p>
+        <span class="feature-tag">不满意可更换</span>
+      </div>
+      <div class="card orange reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="14" rx="2"/><path d="M9 21h6M12 18v3M9 11l2 2 4-4"/></svg></div>
+        <h3>自研培训系统</h3>
+        <p>自主研发培训管理系统，学习进度、训练课时、评价反馈全程线上记录，进度透明可控。</p>
+        <span class="feature-tag">数字化管理</span>
+      </div>
+      <div class="card orange reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="11" rx="2"/><path d="M12 7V4M9 4h6M9 13h.01M15 13h.01M9 16h6"/></svg></div>
+        <h3>机器人教练辅助教学</h3>
+        <p>智能机器人教练随车辅助，点位语音提示、操作实时纠错，练习更充分，缓解学车紧张。</p>
+        <span class="feature-tag">AI 辅助</span>
+      </div>
+      <div class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h3>模块化 · 标准化 · 精细化</h3>
+        <p>教学动作拆解为标准模块，逐项讲解、逐项考核，重点难点反复练，每个环节都有规范。</p>
+        <span class="feature-tag">三化教学</span>
+      </div>
+      <div class="card reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+        <h3>以学员评价为导向</h3>
+        <p>教练服务质量与学员评价直接挂钩，公开透明的评价机制倒逼服务提升，杜绝吃拿卡要。</p>
+        <span class="feature-tag">评价驱动</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 培训能力 ============ -->
+<section class="ability" id="ability">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">CAPABILITY</span>
+      <h2>培训能力 · 规模保障 高效拿证</h2>
+      <p>大车量、大容量、自有考场，年均培训能力5万余次，随到随学不排队。</p>
+    </div>
+    <div class="ability-grid">
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-5h9L18 17M7 12V8h10v4"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></div>
+        <h3>直营车辆500余台</h3>
+        <p>规模化车队统一调度，约训灵活。</p>
+      </div>
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 8-8"/><path d="M17 7h4v4"/></svg></div>
+        <h3>年均培训5万余次</h3>
+        <p>成熟的培训吞吐能力，档期充足。</p>
+      </div>
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4M7 9h4M7 12h7"/></svg></div>
+        <h3>车型全面</h3>
+        <p>覆盖主流培训车型，按需选择。</p>
+      </div>
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>自有考场</h3>
+        <p>训练与考试衔接紧密，通过率高。</p>
+      </div>
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>随到随学</h3>
+        <p>报名即可安排训练，时间自主灵活。</p>
+      </div>
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M17 2l4 4-11 11H6v-4z"/><path d="m15 4 4 4"/></svg></div>
+        <h3>不满意随时换教练</h3>
+        <p>直聘体系支撑，更换申请快速响应。</p>
+      </div>
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M3 12h13M8 7l-5 5 5 5"/><path d="M21 4v9a3 3 0 0 1-3 3h-4"/></svg></div>
+        <h3>标准化教学流程</h3>
+        <p>模块拆解、逐项过关，基础更扎实。</p>
+      </div>
+      <div class="ability-item reveal">
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.9-.9L3 20l1-4.6A8.38 8.38 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/></svg></div>
+        <h3>全程服务跟进</h3>
+        <p>报名、体检、约考各环节专人提醒。</p>
+      </div>
+    </div>
+    <div class="ability-banner reveal">
+      <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+      自有考场 · 通过率高 · 随到随学 · 不满意随时更换教练
+    </div>
+  </div>
+</section>
+
+<!-- ============ 本校专属安排 ============ -->
+<section id="campus">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">CAMPUS PLAN</span>
+      <h2>本校专属安排 · 航空港校区</h2>
+      <p>科目二、科目三训练与考试路线科学衔接，报名即刻起全程车接车送。</p>
+    </div>
+    <div class="campus-wrap">
+      <div class="campus-note reveal">
+        <h3>航空港校区服务说明</h3>
+        <p>校区训练与考试安排围绕学员时间优化，场地距离近、接送全覆盖，让练车少奔波、拿证更高效。</p>
+        <div class="pickup">
+          <svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-5h9L18 17M7 12V8h10v4"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg>
+          <div>
+            <b>报名即刻起 · 车接车送</b>
+            <span>外出体检、训练、考试等均安排专车接送，两人一车或一人一车（按班型）。</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-dot"><small></small></div>
+          <div class="tl-card">
+            <h4>科目二：考试场地训练<span>7km · 约15分钟</span></h4>
+            <p>科目二考试场地为<b>市振中驾校武侯三河村训练场</b>，距离学校约<b>7公里，车程约15分钟</b>，熟悉考场环境，考试更从容。</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"><small></small></div>
+          <div class="tl-card">
+            <h4>科目三：周边大路 + 考场强化<span>最后两节考场训练</span></h4>
+            <p>日常在<b>学校周边大路</b>进行道路驾驶训练；<b>最后两节课安排在科目三考试场地</b>实景强化，针对性适应考试路线。</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"><small></small></div>
+          <div class="tl-card">
+            <h4>全程保障：体检 · 训练 · 考试接送</h4>
+            <p>自报名即刻起，凡外出体检、训练、考试等环节，均安排<b>车接车送</b>，通勤无忧。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 班型价格 ============ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">PRICING</span>
+      <h2>班型价格 · 1999元起 明码标价</h2>
+      <p>速考班 / 全包班任选，优质班型一人一车、教练1V1；全包班含体检、模拟、考试、重考等费用。</p>
+    </div>
+    <div class="price-grid">
+
+      <!-- 普通速考班 -->
+      <div class="price-card reveal">
+        <div class="price-tag-top">高性价比之选</div>
+        <h3>普通速考班</h3>
+        <div class="price"><small>¥</small><b>1999</b></div>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包上门接送</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>两人一车</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>随到随学，自由约训</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>机器人教练辅助</li>
+          <li class="off"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>一人一车专车训练</li>
+          <li class="off"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>体检/模拟/考试/重考费用全包</li>
+        </ul>
+        <a href="#contact" class="btn">咨询该班型</a>
+      </div>
+
+      <!-- 优质速考班 -->
+      <div class="price-card reveal">
+        <div class="price-tag-top">单人单车 · 效率优先</div>
+        <h3>优质速考班</h3>
+        <div class="price"><small>¥</small><b>2499</b></div>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>教练 1V1 教学</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包上门接送</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>一人一车 · 专车训练</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>随到随学，自由约训</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>机器人教练辅助</li>
+          <li class="off"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>体检/模拟/考试/重考费用全包</li>
+        </ul>
+        <a href="#contact" class="btn">咨询该班型</a>
+      </div>
+
+      <!-- 普通全包班 -->
+      <div class="price-card reveal">
+        <div class="price-tag-top">费用全包 · 学车无忧</div>
+        <h3>普通全包班</h3>
+        <div class="price"><small>¥</small><b>3699</b></div>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包上门接送</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>两人一车</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包体检费用</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包模拟、考试费用</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包重考费用 *</li>
+          <li class="off"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>一人一车专车训练</li>
+        </ul>
+        <p class="price-note">* 科目一重考费用除外</p>
+        <a href="#contact" class="btn">咨询该班型</a>
+      </div>
+
+      <!-- 优质全包班（推荐） -->
+      <div class="price-card rec reveal">
+        <span class="rec-badge">★ 重点推荐</span>
+        <div class="price-tag-top">1V1专车 · 费用全包</div>
+        <h3>优质全包班</h3>
+        <div class="price"><small>¥</small><b>3999</b></div>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>教练 1V1 教学</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包上门接送</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>一人一车 · 专车训练</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包体检、模拟、考试费用</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>包重考费用 *</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>不满意随时更换教练</li>
+        </ul>
+        <p class="price-note">* 科目一重考费用除外</p>
+        <a href="#contact" class="btn btn-primary">立即报名咨询</a>
+      </div>
+
+    </div>
+
+    <!-- 对比表 -->
+    <div class="compare reveal">
+      <h3>四种班型一目了然</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>对比项目</th>
+            <th>普通速考班</th>
+            <th>优质速考班</th>
+            <th>普通全包班</th>
+            <th class="rec-col">优质全包班（推荐）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>价格</th><td>1999元</td><td>2499元</td><td>3699元</td><td class="rec-col">3999元</td></tr>
+          <tr><th>上门接送</th><td class="yes">包含</td><td class="yes">包含</td><td class="yes">包含</td><td class="rec-col">包含</td></tr>
+          <tr><th>车辆安排</th><td>两人一车</td><td>一人一车专车</td><td>两人一车</td><td class="rec-col">一人一车专车</td></tr>
+          <tr><th>教学方式</th><td>常规带教</td><td>教练 1V1</td><td>常规带教</td><td class="rec-col">教练 1V1</td></tr>
+          <tr><th>体检 / 模拟 / 考试费</th><td class="dash">—</td><td class="dash">—</td><td class="yes">全包</td><td class="rec-col">全包</td></tr>
+          <tr><th>重考费用 *</th><td class="dash">—</td><td class="dash">—</td><td class="yes">全包</td><td class="rec-col">全包</td></tr>
+          <tr><th>机器人教练辅助</th><td class="yes">有</td><td class="yes">有</td><td class="yes">有</td><td class="rec-col">有</td></tr>
+          <tr><th>不满意更换教练</th><td class="yes">支持</td><td class="yes">支持</td><td class="yes">支持</td><td class="rec-col">支持</td></tr>
+        </tbody>
+      </table>
+      <p class="compare-foot">* 全包班所包重考费用不含科目一重考费用；“—”表示该项未包含在班型报价内。班型详情以报名合同约定为准。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 报名咨询 ============ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">SIGN UP</span>
+      <h2>报名咨询 · 提交信息 专人对接</h2>
+      <p>留下您的联系方式与意向班型，招生老师将尽快与您联系，安排接送、体检与训练。</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <h3>为什么选择我们</h3>
+        <p>19家直营品牌统一服务标准，报名到拿证全程有人管。</p>
+        <ul class="contact-list">
+          <li>
+            <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-5h9L18 17M7 12V8h10v4"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></span>
+            <div><b>车接车送</b><span>报名起体检、训练、考试均安排接送</span></div>
+          </li>
+          <li>
+            <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div><b>自有考场</b><span>训练场贴近考场，通过率高</span></div>
+          </li>
+          <li>
+            <span class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+            <div><b>教练直聘</b><span>不满意随时申请更换教练</span></div>
+          </li>
+          <li>
+            <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.9-.9L3 20l1-4.6A8.38 8.38 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/></svg></span>
+            <div><b>就近门店咨询</b><span>100余家直营门店，具体电话与地址请咨询招生老师</span></div>
+          </li>
+        </ul>
+        <ul class="steps">
+          <li><b>报名咨询</b></li>
+          <li><b>体检建档</b></li>
+          <li><b>科目一</b></li>
+          <li><b>科目二</b></li>
+          <li><b>科目三</b></li>
+          <li><b>拿证</b></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="signupForm">
+        <h3>在线报名 / 预约咨询</h3>
+        <p>填写以下信息，招生老师将尽快与您联系（信息仅用于报名咨询）。</p>
+        <div class="form-row">
+          <div class="field">
+            <label>姓名 / 称呼 <em>*</em></label>
+            <input type="text" name="name" placeholder="请输入您的称呼" required>
+          </div>
+          <div class="field">
+            <label>联系电话 <em>*</em></label>
+            <input type="tel" name="phone" id="phoneInput" placeholder="请输入手机号码" pattern="1[3-9]\d{9}" required>
+          </div>
+        </div>
+        <div class="field">
+          <label>意向班型 <em>*</em></label>
+          <select name="course" required>
+            <option value="">请选择意向班型</option>
+            <option>普通速考班 · 1999元（两人一车）</option>
+            <option>优质速考班 · 2499元（1V1一人一车）</option>
+            <option>普通全包班 · 3699元（两人一车·费用全包）</option>
+            <option>优质全包班 · 3999元（1V1专车·费用全包·推荐）</option>
+            <option>暂不确定，需要老师推荐</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>所在位置 / 留言</label>
+          <textarea name="message" placeholder="如所在区域、期望练车时间、想咨询的问题等"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">提交报名信息</button>
+        <p class="form-tip">提交后请保持电话畅通；具体接送安排以招生老师确认为准。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 底部 ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo">
+          <span class="foot-logo-plate"><img class="foot-logo-img" src="207fee025159a563884cc8fe3904163a.png" alt="西联驾培" onerror="this.closest('.foot-logo-plate').style.display='none';document.getElementById('footLogoFallback').style.display='flex';"></span>
+          <span class="logo-fallback" id="footLogoFallback">
+            <span class="logo-mark">
+              <svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-5h9L18 17M7 12V8h10v4"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg>
+            </span>
+            <span class="logo-text"><b>西联驾培</b><span>航空港校区报名咨询</span></span>
+          </span>
+        </a>
+        <p class="foot-about">西联驾培旗下汇聚长城、长征、聚元、五六、博成、广飞、金盾等19家直营品牌驾校，主营成渝、覆盖西南，全国150家关联业务单位。50+直营场地、500余台直营车辆，随到随学、车接车送。</p>
+        <p class="foot-brands">直营品牌：长城 / 长征 / 聚元 / 五六 / 博成 / 广飞 / 金盾 等19家</p>
+      </div>
+      <div class="foot-col">
+        <h4>快速导航</h4>
+        <a href="#brand">品牌实力</a>
+        <a href="#grounds">训练场地</a>
+        <a href="#features">培训特色</a>
+        <a href="#ability">培训能力</a>
+      </div>
+      <div class="foot-col">
+        <h4>报名服务</h4>
+        <a href="#campus">航空港校区安排</a>
+        <a href="#pricing">班型与价格</a>
+        <a href="#contact">在线报名咨询</a>
+        <a href="#pricing">优质全包班 3999元</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 西联驾培 · 航空港校区 版权所有 ｜ 全包班重考费用不含科目一，具体以报名合同约定为准</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 手机端悬浮报名条 -->
+<div class="mobile-bar">
+  <a href="tel:" class="btn btn-blue" onclick="return false">电话咨询</a>
+  <a href="#contact" class="btn btn-primary">立即报名</a>
+</div>
+
+<!-- 提示弹层 -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></svg>
+  <span id="toastText">提交成功</span>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端菜单 ---------- */
+  var hamburger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', function(){
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+    });
+  });
+
+  /* ---------- 导航当前栏目高亮 ---------- */
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
+  var linkMap = {};
+  navLinks.querySelectorAll('a').forEach(function(a){
+    linkMap[a.getAttribute('href').slice(1)] = a;
+  });
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        Object.keys(linkMap).forEach(function(k){ linkMap[k].classList.remove('active'); });
+        if(linkMap[en.target.id]) linkMap[en.target.id].classList.add('active');
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  sections.forEach(function(s){ spy.observe(s); });
+
+  /* ---------- 滚动显现 ---------- */
+  var revealObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.classList.add('in');
+        revealObserver.unobserve(en.target);
+      }
+    });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ revealObserver.observe(el); });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-count]');
+  var counted = false;
+  var counterObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting && !counted){
+        counted = true;
+        counters.forEach(function(el){
+          var target = parseInt(el.getAttribute('data-count'),10);
+          var duration = 1400, start = null;
+          function step(ts){
+            if(!start) start = ts;
+            var p = Math.min((ts - start)/duration, 1);
+            var ease = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(target * ease);
+            if(p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        });
+        counterObserver.disconnect();
+      }
+    });
+  },{threshold:.4});
+  var statsEl = document.querySelector('.stats-grid');
+  if(statsEl) counterObserver.observe(statsEl);
+
+  /* ---------- 提示弹层 ---------- */
+  var toast = document.getElementById('toast');
+  var toastText = document.getElementById('toastText');
+  var toastTimer = null;
+  function showToast(msg){
+    toastText.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 3200);
+  }
+
+  /* ---------- 报名表单 ---------- */
+  var form = document.getElementById('signupForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var phone = document.getElementById('phoneInput').value.trim();
+    if(!/^1[3-9]\d{9}$/.test(phone)){
+      showToast('请输入正确的11位手机号码');
+      document.getElementById('phoneInput').focus();
+      return;
+    }
+    showToast('报名信息已提交，招生老师将尽快与您联系！');
+    form.reset();
+  });
+
+  /* ---------- 价格卡片“咨询该班型”联动 ---------- */
+  document.querySelectorAll('.price-card .btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.price-card');
+      var name = card.querySelector('h3').textContent.trim();
+      var select = form.querySelector('select[name="course"]');
+      for(var i=0;i<select.options.length;i++){
+        if(select.options[i].textContent.indexOf(name.split('（')[0]) > -1
+           || select.options[i].textContent.indexOf(name) > -1){
+          select.value = select.options[i].value;
+          break;
+        }
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
