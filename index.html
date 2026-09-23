@@ -365,21 +365,11 @@ header.nav{
   background:#fff;border:1px solid var(--line);border-radius:20px;padding:38px 34px;box-shadow:var(--shadow);
 }
 .contact-form h3{font-size:21px;color:var(--blue-900);margin-bottom:6px}
-.contact-form > p{font-size:14px;color:var(--gray);margin-bottom:24px}
-.field{margin-bottom:18px}
-.field label{display:block;font-size:14px;font-weight:600;margin-bottom:7px;color:var(--ink)}
-.field label em{color:var(--orange);font-style:normal}
-.field input,.field select,.field textarea{
-  width:100%;padding:12px 15px;border:1.5px solid var(--line);border-radius:10px;
-  font-size:15px;font-family:inherit;color:var(--ink);background:#fbfdff;transition:.2s;
-}
-.field input:focus,.field select:focus,.field textarea:focus{
-  outline:none;border-color:var(--blue-500);background:#fff;box-shadow:0 0 0 3px rgba(31,111,240,.12);
-}
-.field textarea{resize:vertical;min-height:88px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.contact-form .btn{width:100%;margin-top:6px}
-.form-tip{font-size:12.5px;color:#9fb0c8;margin-top:12px;text-align:center}
+.contact-form > p{font-size:14px;color:var(--gray);margin-bottom:22px}
+.embed-frame{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.embed-frame iframe{width:100%;height:760px;border:0;display:block}
+.embed-fallback{margin-top:14px;text-align:center;font-size:13.5px;color:var(--gray)}
+.embed-fallback a{color:var(--blue-600);text-decoration:underline}
 
 /* ============ 底部 ============ */
 footer{background:var(--blue-900);color:#c4d6f4;padding:56px 0 26px}
@@ -403,16 +393,6 @@ footer .logo-text span{color:#9fb9e3}
   padding:10px 14px;gap:10px;box-shadow:0 -6px 20px rgba(8,38,95,.12);
 }
 .mobile-bar a{flex:1;padding:12px 6px;font-size:15px}
-
-/* ============ 提示弹层 ============ */
-.toast{
-  position:fixed;top:92px;left:50%;transform:translateX(-50%) translateY(-20px);
-  background:var(--blue-900);color:#fff;padding:14px 26px;border-radius:12px;
-  font-size:15px;box-shadow:0 12px 30px rgba(8,38,95,.3);
-  opacity:0;pointer-events:none;transition:.35s;z-index:200;display:flex;align-items:center;gap:10px;
-}
-.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-.toast svg{width:20px;height:20px;stroke:#ffc99c;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
 /* 滚动显现 */
 .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.22,.68,.32,1)}
@@ -466,7 +446,7 @@ footer .logo-text span{color:#9fb9e3}
   .ability-banner{font-size:16px;padding:20px}
   .price-grid{grid-template-columns:1fr}
   .compare{padding:24px 16px}
-  .form-row{grid-template-columns:1fr}
+  .embed-frame iframe{height:680px}
   .contact-form{padding:28px 22px}
   .steps{flex-wrap:wrap;gap:14px 0}
   .steps li{flex:0 0 33.33%}
@@ -967,37 +947,14 @@ footer .logo-text span{color:#9fb9e3}
         </ul>
       </div>
 
-      <form class="contact-form reveal" id="signupForm">
+      <div class="contact-form reveal">
         <h3>在线报名 / 预约咨询</h3>
-        <p>填写以下信息，招生老师将尽快与您联系（信息仅用于报名咨询）。</p>
-        <div class="form-row">
-          <div class="field">
-            <label>姓名 / 称呼 <em>*</em></label>
-            <input type="text" name="name" placeholder="请输入您的称呼" required>
-          </div>
-          <div class="field">
-            <label>联系电话 <em>*</em></label>
-            <input type="tel" name="phone" id="phoneInput" placeholder="请输入手机号码" pattern="1[3-9]\d{9}" required>
-          </div>
+        <p>填写下方报名表并提交，招生老师将第一时间收到通知并与您联系；提交后请保持电话畅通。</p>
+        <div class="embed-frame">
+          <iframe src="https://jinshuju.com/f/Qtpg4S?background=white&banner=hide" title="西联驾培在线报名表" loading="lazy"></iframe>
         </div>
-        <div class="field">
-          <label>意向班型 <em>*</em></label>
-          <select name="course" required>
-            <option value="">请选择意向班型</option>
-            <option>普通速考班 · 1999元（两人一车）</option>
-            <option>优质速考班 · 2499元（1V1一人一车）</option>
-            <option>普通全包班 · 3699元（两人一车·费用全包）</option>
-            <option>优质全包班 · 3999元（1V1专车·费用全包·推荐）</option>
-            <option>暂不确定，需要老师推荐</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>所在位置 / 留言</label>
-          <textarea name="message" placeholder="如所在区域、期望练车时间、想咨询的问题等"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">提交报名信息</button>
-        <p class="form-tip">提交后请保持电话畅通；具体接送安排以招生老师确认为准。</p>
-      </form>
+        <p class="embed-fallback">表单加载较慢？<a href="https://jsj.top/f/Qtpg4S" target="_blank" rel="noopener">在新窗口打开完整报名表</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -1044,12 +1001,6 @@ footer .logo-text span{color:#9fb9e3}
 <div class="mobile-bar">
   <a href="tel:" class="btn btn-blue" onclick="return false">电话咨询</a>
   <a href="#contact" class="btn btn-primary">立即报名</a>
-</div>
-
-<!-- 提示弹层 -->
-<div class="toast" id="toast">
-  <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></svg>
-  <span id="toastText">提交成功</span>
 </div>
 
 <script>
@@ -1122,47 +1073,6 @@ footer .logo-text span{color:#9fb9e3}
   },{threshold:.4});
   var statsEl = document.querySelector('.stats-grid');
   if(statsEl) counterObserver.observe(statsEl);
-
-  /* ---------- 提示弹层 ---------- */
-  var toast = document.getElementById('toast');
-  var toastText = document.getElementById('toastText');
-  var toastTimer = null;
-  function showToast(msg){
-    toastText.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 3200);
-  }
-
-  /* ---------- 报名表单 ---------- */
-  var form = document.getElementById('signupForm');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var phone = document.getElementById('phoneInput').value.trim();
-    if(!/^1[3-9]\d{9}$/.test(phone)){
-      showToast('请输入正确的11位手机号码');
-      document.getElementById('phoneInput').focus();
-      return;
-    }
-    showToast('报名信息已提交，招生老师将尽快与您联系！');
-    form.reset();
-  });
-
-  /* ---------- 价格卡片“咨询该班型”联动 ---------- */
-  document.querySelectorAll('.price-card .btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var card = btn.closest('.price-card');
-      var name = card.querySelector('h3').textContent.trim();
-      var select = form.querySelector('select[name="course"]');
-      for(var i=0;i<select.options.length;i++){
-        if(select.options[i].textContent.indexOf(name.split('（')[0]) > -1
-           || select.options[i].textContent.indexOf(name) > -1){
-          select.value = select.options[i].value;
-          break;
-        }
-      }
-    });
-  });
 })();
 </script>
 </body>
